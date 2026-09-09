@@ -3,33 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AC1 Learning | Business Training & Consulting</title>
-<meta name="description" content="AC1 Learning - Consultoría y capacitación empresarial para equipos y organizaciones que buscan crecer.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%230B3D91%22/><text x=%2250%22 y=%2266%22 font-size=%2250%22 font-family=%22Arial%22 fill=%22white%22 text-anchor=%22middle%22>A1</text></svg>">
+<title>AC1 Learning | Asesoría en Bilingüismo Institucional</title>
+<meta name="description" content="AC1 Learning acompaña a colegios y empresas en su camino hacia el bilingüismo, con asesoría, tecnología con IA, formación y certificación internacional.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 60 54%22><polygon points=%2230,4 50,50 10,50%22 fill=%22%235bb447%22/><polygon points=%2230,16 42,50 18,50%22 fill=%22%23092F67%22/></svg>">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header class="site-header">
   <div class="container header-inner">
-    <a href="#home" class="logo">
-      <span class="logo-mark">AC1</span>
-      <span class="logo-text">Learning</span>
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 60 54" xmlns="http://www.w3.org/2000/svg">
+        <polygon points="30,4 50,50 10,50" fill="#5bb447"/>
+        <polygon points="30,16 42,50 18,50" fill="#092F67"/>
+        <polygon points="30,4 24,16 36,16" fill="#5bb447"/>
+        <polygon points="30,8 31.6,12.2 36,12.6 32.7,15.4 33.7,19.8 30,17.3 26.3,19.8 27.3,15.4 24,12.6 28.4,12.2" fill="#ffffff"/>
+      </svg>
+      <span class="brand-text">
+        <strong>AC1 Learning</strong>
+        <small>your way forward</small>
+      </span>
     </a>
 
     <nav class="main-nav" id="main-nav">
-      <a href="#about" data-i18n="nav.about">Nosotros</a>
-      <a href="#services" data-i18n="nav.services">Servicios</a>
-      <a href="#why" data-i18n="nav.why">Por qué AC1</a>
-      <a href="#testimonials" data-i18n="nav.testimonials">Clientes</a>
-      <a href="#contact" class="nav-cta" data-i18n="nav.contact">Contacto</a>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="colegios.html">Para colegios</a>
+      <a href="empresas.html">Para empresas</a>
+      <a href="metodologia.html">Metodología</a>
+      <a href="tecnologia.html">Tecnología e IA</a>
+      <a href="certificacion.html">Certificación</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="contacto.html" class="nav-cta-mobile">Solicita una asesoría</a>
     </nav>
 
     <div class="header-actions">
-      <div class="lang-switch" role="group" aria-label="Language switch">
-        <button type="button" class="lang-btn active" data-lang="es">ES</button>
-        <button type="button" class="lang-btn" data-lang="en">EN</button>
-      </div>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menu" aria-expanded="false">
+      <a href="contacto.html" class="btn-nav-cta">📅 Solicita una asesoría</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menú" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -37,186 +47,119 @@
 </header>
 <main>
 
-  <section id="home" class="hero">
+  <section class="hero">
     <div class="container hero-inner">
       <div class="hero-copy">
-        <p class="eyebrow" data-i18n="hero.eyebrow">Consultoría &amp; Capacitación Empresarial</p>
-        <h1 data-i18n="hero.title">Equipos más fuertes. Decisiones más claras. Resultados medibles.</h1>
-        <p class="lead" data-i18n="hero.lead">AC1 Learning ayuda a empresas a desarrollar el talento y las capacidades que necesitan para crecer, a través de programas de capacitación y consultoría a la medida.</p>
+        <p class="eyebrow">Asesoría en bilingüismo institucional</p>
+        <h1>El inglés abre puertas, <span class="accent">nosotros te ayudamos a construirlas.</span></h1>
+        <p class="lead">En AC1 Learning acompañamos a colegios en su camino hacia el bilingüismo con una propuesta integral que combina asesoría especializada, tecnología, formación y certificación internacional.</p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary" data-i18n="hero.ctaPrimary">Habla con un consultor</a>
-          <a href="#services" class="btn btn-ghost" data-i18n="hero.ctaSecondary">Ver servicios</a>
-        </div>
-        <div class="hero-stats">
-          <div><strong>12+</strong><span data-i18n="hero.stat1">años de experiencia</span></div>
-          <div><strong>80+</strong><span data-i18n="hero.stat2">empresas atendidas</span></div>
-          <div><strong>95%</strong><span data-i18n="hero.stat3">clientes satisfechos</span></div>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="200" cy="200" r="180" fill="#eaf1ff"/>
-          <rect x="90" y="150" width="90" height="140" rx="10" fill="#0B3D91"/>
-          <rect x="200" y="100" width="90" height="190" rx="10" fill="#3D6FD6"/>
-          <rect x="150" y="230" width="100" height="60" rx="8" fill="#FFB020"/>
-          <circle cx="290" cy="110" r="26" fill="#0B3D91"/>
-        </svg>
-      </div>
-    </div>
-  </section>
-  <section id="about" class="about">
-    <div class="container about-inner">
-      <div class="section-head">
-        <p class="eyebrow" data-i18n="about.eyebrow">Sobre nosotros</p>
-        <h2 data-i18n="about.title">Somos el equipo que forma a tu equipo</h2>
-      </div>
-      <div class="about-grid">
-        <p class="about-text" data-i18n="about.text">AC1 Learning es una firma de consultoría y capacitación enfocada en el desarrollo del talento corporativo. Diseñamos programas prácticos de liderazgo, ventas, servicio al cliente y habilidades técnicas, adaptados a la realidad de cada organización. Trabajamos junto a tu equipo directivo para diagnosticar necesidades, diseñar contenidos y medir el impacto real de cada intervención.</p>
-        <ul class="about-values">
-          <li><strong data-i18n="about.v1t">A la medida</strong><span data-i18n="about.v1d">Programas diseñados según los objetivos y cultura de tu empresa.</span></li>
-          <li><strong data-i18n="about.v2t">Orientado a resultados</strong><span data-i18n="about.v2d">Medimos impacto en desempeño, no solo asistencia.</span></li>
-          <li><strong data-i18n="about.v3t">Consultores expertos</strong><span data-i18n="about.v3d">Facilitadores con experiencia real en la industria.</span></li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="services" class="services">
-    <div class="container">
-      <div class="section-head center">
-        <p class="eyebrow" data-i18n="services.eyebrow">Servicios</p>
-        <h2 data-i18n="services.title">Soluciones de capacitación y consultoría</h2>
-        <p class="section-sub" data-i18n="services.sub">Combinamos diagnóstico, diseño instruccional y facilitación para generar cambios reales en tu organización.</p>
-      </div>
-      <div class="cards">
-        <article class="card">
-          <div class="card-icon">🎯</div>
-          <h3 data-i18n="services.c1t">Liderazgo &amp; Gestión de Equipos</h3>
-          <p data-i18n="services.c1d">Desarrollamos habilidades de liderazgo, comunicación y gestión de desempeño para mandos medios y altos.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">📈</div>
-          <h3 data-i18n="services.c2t">Ventas &amp; Atención al Cliente</h3>
-          <p data-i18n="services.c2d">Programas prácticos para mejorar conversión, negociación y experiencia del cliente.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🧭</div>
-          <h3 data-i18n="services.c3t">Consultoría Organizacional</h3>
-          <p data-i18n="services.c3d">Diagnóstico de brechas de talento y diseño de planes de formación alineados a la estrategia.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">💻</div>
-          <h3 data-i18n="services.c4t">Capacitación Digital &amp; Herramientas</h3>
-          <p data-i18n="services.c4d">Formación en herramientas digitales, productividad y adopción tecnológica para equipos.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">🤝</div>
-          <h3 data-i18n="services.c5t">Habilidades Blandas</h3>
-          <p data-i18n="services.c5d">Comunicación, trabajo en equipo, manejo del cambio y resolución de conflictos.</p>
-        </article>
-        <article class="card">
-          <div class="card-icon">📊</div>
-          <h3 data-i18n="services.c6t">Medición de Impacto</h3>
-          <p data-i18n="services.c6d">Evaluamos el efecto de cada programa en indicadores clave del negocio.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-  <section id="why" class="why">
-    <div class="container why-inner">
-      <div class="section-head">
-        <p class="eyebrow" data-i18n="why.eyebrow">Por qué elegirnos</p>
-        <h2 data-i18n="why.title">Un enfoque práctico, no solo teoría</h2>
-      </div>
-      <div class="why-grid">
-        <div class="why-item">
-          <h3 data-i18n="why.i1t">Diagnóstico real</h3>
-          <p data-i18n="why.i1d">Empezamos entendiendo tu negocio antes de proponer cualquier programa.</p>
-        </div>
-        <div class="why-item">
-          <h3 data-i18n="why.i2t">Contenido a la medida</h3>
-          <p data-i18n="why.i2d">Nada de plantillas genéricas: cada programa se adapta a tu industria.</p>
-        </div>
-        <div class="why-item">
-          <h3 data-i18n="why.i3t">Facilitadores expertos</h3>
-          <p data-i18n="why.i3d">Consultores con trayectoria real dictando cada sesión.</p>
-        </div>
-        <div class="why-item">
-          <h3 data-i18n="why.i4t">Seguimiento post-programa</h3>
-          <p data-i18n="why.i4d">Acompañamos la aplicación de lo aprendido en el día a día.</p>
+          <a href="contacto.html" class="btn btn-primary">📅 Agenda una asesoría</a>
+          <a href="nosotros.html" class="btn btn-outline">▶ Conoce nuestra propuesta</a>
         </div>
       </div>
     </div>
+    <p class="hero-tagline">Better English<br>Bigger Opportunities</p>
   </section>
-  <section id="testimonials" class="testimonials">
-    <div class="container">
-      <div class="section-head center">
-        <p class="eyebrow" data-i18n="testimonials.eyebrow">Clientes</p>
-        <h2 data-i18n="testimonials.title">Empresas que confían en AC1 Learning</h2>
-      </div>
-      <div class="quote-grid">
-        <blockquote>
-          <p data-i18n="testimonials.q1">"El programa de liderazgo transformó la forma en que nuestros gerentes dan feedback a sus equipos."</p>
-          <footer data-i18n="testimonials.a1">— Directora de RRHH, empresa de retail</footer>
-        </blockquote>
-        <blockquote>
-          <p data-i18n="testimonials.q2">"AC1 Learning entendió nuestro negocio desde la primera reunión. El resultado se notó en ventas."</p>
-          <footer data-i18n="testimonials.a2">— Gerente Comercial, sector servicios</footer>
-        </blockquote>
-        <blockquote>
-          <p data-i18n="testimonials.q3">"Un equipo de facilitadores muy profesional, con contenido práctico y aplicable."</p>
-          <footer data-i18n="testimonials.a3">— Gerente General, sector industrial</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="contact">
-    <div class="container contact-inner">
-      <div class="section-head">
-        <p class="eyebrow" data-i18n="contact.eyebrow">Contacto</p>
-        <h2 data-i18n="contact.title">Hablemos sobre tu próximo programa de capacitación</h2>
-        <p class="section-sub" data-i18n="contact.sub">Cuéntanos qué necesita tu equipo y te contactaremos para agendar una llamada.</p>
-      </div>
 
-      <form class="contact-form" id="contact-form">
-        <div class="form-row">
-          <label>
-            <span data-i18n="contact.name">Nombre</span>
-            <input type="text" name="name" required>
-          </label>
-          <label>
-            <span data-i18n="contact.company">Empresa</span>
-            <input type="text" name="company">
-          </label>
-        </div>
-        <div class="form-row">
-          <label>
-            <span data-i18n="contact.email">Correo</span>
-            <input type="email" name="email" required>
-          </label>
-          <label>
-            <span data-i18n="contact.phone">Teléfono</span>
-            <input type="tel" name="phone">
-          </label>
-        </div>
-        <label class="full">
-          <span data-i18n="contact.message">¿Qué necesitas?</span>
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <button type="submit" class="btn btn-primary" data-i18n="contact.submit">Enviar mensaje</button>
-        <p class="form-note" data-i18n="contact.note">Al enviar este formulario aceptas que te contactemos sobre tu solicitud.</p>
-      </form>
+  <section class="feature-strip">
+    <div class="container feature-grid">
+      <div class="feature-item">
+        <span class="feature-icon">🧭</span>
+        <h4>Asesoría especializada</h4>
+        <p>Diagnóstico, plan de acción y acompañamiento continuo.</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">💻</span>
+        <h4>Plataforma con IA</h4>
+        <p>Aprendizaje personalizado, interactivo y medible.</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🎓</span>
+        <h4>Formación integral</h4>
+        <p>Estudiantes, docentes y comunidad educativa.</p>
+      </div>
+      <div class="feature-item">
+        <span class="feature-icon">🌍</span>
+        <h4>Certificación internacional</h4>
+        <p>Conecta con oportunidades globales.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container mission-grid">
+      <div class="mission-copy">
+        <p class="eyebrow">Nuestra misión</p>
+        <h2>Impulsar el bilingüismo en Colombia, para que más personas conviertan el inglés en oportunidades reales.</h2>
+        <p>En AC1 Learning trabajamos con colegios, empresas y comunidades para desarrollar las competencias en inglés que abren puertas al futuro, a través de un modelo integral, innovador y humano.</p>
+        <a href="nosotros.html" class="btn-link">Conoce más sobre nosotros →</a>
+      </div>
+      <figure class="mission-photo">
+        <div style="aspect-ratio:4/3; background:linear-gradient(135deg,#174fa2,#5bb447); display:flex; align-items:center; justify-content:center; font-size:3rem;">🧑‍🏫💻</div>
+        <figcaption>Educación + Tecnología = Futuro</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section-alt">
+    <div class="container">
+      <div class="why-card" style="max-width:720px; margin:0 auto;">
+        <p class="eyebrow">¿Por qué elegir AC1 Learning?</p>
+        <ul class="checklist">
+          <li>Metodología práctica y enfocada en la vida real.</li>
+          <li>Acompañamiento personalizado para cada institución.</li>
+          <li>Tecnología con inteligencia artificial.</li>
+          <li>Certificaciones internacionales reconocidas.</li>
+          <li>Resultados medibles y sostenibles.</li>
+        </ul>
+        <a href="contacto.html" class="btn btn-primary">Hablemos de tu colegio</a>
+      </div>
     </div>
   </section>
 
 </main>
 <footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <span class="logo-mark small">AC1</span>
-      <span>AC1 Learning</span>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="brand">
+          <svg class="brand-mark" viewBox="0 0 60 54" xmlns="http://www.w3.org/2000/svg">
+            <polygon points="30,4 50,50 10,50" fill="#5bb447"/>
+            <polygon points="30,16 42,50 18,50" fill="#0d3d84"/>
+            <polygon points="30,4 24,16 36,16" fill="#5bb447"/>
+            <polygon points="30,8 31.6,12.2 36,12.6 32.7,15.4 33.7,19.8 30,17.3 26.3,19.8 27.3,15.4 24,12.6 28.4,12.2" fill="#ffffff"/>
+          </svg>
+          <span class="brand-text">
+            <strong>AC1 Learning</strong>
+            <small>your way forward</small>
+          </span>
+        </div>
+        <p>Asesoría en bilingüismo institucional para colegios y empresas: tecnología, formación y certificación internacional.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="colegios.html">Para colegios</a></li>
+          <li><a href="empresas.html">Para empresas</a></li>
+          <li><a href="metodologia.html">Metodología</a></li>
+          <li><a href="tecnologia.html">Tecnología e IA</a></li>
+          <li><a href="certificacion.html">Certificación</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:contacto@ac1learning.com">contacto@ac1learning.com</a></li>
+          <li><a href="tel:+573017642000">+57 301 764 2000</a></li>
+          <li>Bogotá, Colombia</li>
+        </ul>
+      </div>
     </div>
-    <p data-i18n="footer.tagline">Consultoría y capacitación empresarial.</p>
-    <p class="footer-copy">&copy; <span id="year"></span> AC1 Learning. <span data-i18n="footer.rights">Todos los derechos reservados.</span></p>
+    <div class="footer-bottom">
+      &copy; <span data-year></span> AC1 Learning. Todos los derechos reservados.
+    </div>
   </div>
 </footer>
 
